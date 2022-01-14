@@ -1,3 +1,8 @@
+//---------------------------------------------------
+// glchart.cpp
+// Реализация построения графика типа "Бар"
+// в декартовых координатах
+//----------------------------------------------------
 #include <iostream>
 #include <QSurfaceFormat>
 #include <QtOpenGL/QtOpenGL>
@@ -8,6 +13,7 @@
 
 using namespace std;
 
+// используем этот шрифт:
 FTGLPixmapFont static font("data/fonts/TerminusTTF-4.47.0.ttf");
 
 void GLChart_bar::Draw_Bar(GLfloat scale_x, GLfloat scale_y, int coordX, int sizeY)
